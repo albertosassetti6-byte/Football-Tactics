@@ -130,17 +130,4 @@ Supported league codes: `ita.1`, `eng.1`, `esp.1`, `ger.1`, `fra.1`, `uefa.champ
 
 Any modern evergreen browser (Chrome, Edge, Firefox, Safari).
 
-## Publishing on GitHub Pages
 
-1. Push the files to your repository.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch** and select your main branch and the `/ (root)` folder.
-4. Your site will be available at `https://<your-username>.github.io/<your-repo>/`.
-
-## Contributing
-
-Suggestions and pull requests are welcome. For new tactics, please keep the caption to one sentence and check the diagram in the zoom viewer before submitting.
-
-## License
-
-Released under the [MIT License](https://opensource.org/licenses/MIT). Add a `LICENSE` file to your repository to make it official.
