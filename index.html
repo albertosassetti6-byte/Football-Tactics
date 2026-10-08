@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Football Tactics</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<div id="tipBanner" role="status"></div>
+
+<div id="adModal" class="modal">
+  <div class="modal-box">
+    <button id="adClose" aria-label="Close">×</button>
+    <h3>Grow your business</h3>
+    <p>Create your advertising campaign in just a few minutes.</p>
+    <a class="btn" href="https://mondiad.com?refid=19862" target="_blank" rel="noopener sponsored">Create your advertising campaign</a>
+  </div>
+</div>
+
+<div id="zoomModal" class="modal">
+  <div class="zoom-box">
+    <div class="zoom-bar">
+      <button id="zPrev">Previous</button><button id="zOut">Zoom out</button><button id="zIn">Zoom in</button><button id="zNext">Next</button><button id="zClose">Close</button>
+    </div>
+    <div id="zoomView"></div>
+    <p id="zoomCaption"></p>
+  </div>
+</div>
+
+<main>
+  <section id="home" class="page">
+    <div class="hero">
+      
+      <h1>Football Tactics</h1>
+      <p class="slogan">Draw the game, win the match.</p>
+    </div>
+
+    <div class="wrap">
+      <h2>Our tactics</h2>
+      <div id="filters"></div>
+      <div id="grid"></div>
+    </div>
+
+    <div class="wrap" id="live">
+      <h2><span class="dot"></span>Live scores and news</h2>
+      <p class="clock"></p>
+      <select id="league">
+        <option value="ita.1">Serie A</option><option value="eng.1">Premier League</option>
+        <option value="esp.1">LaLiga</option><option value="ger.1">Bundesliga</option>
+        <option value="fra.1">Ligue 1</option><option value="uefa.champions">Champions League</option>
+      </select>
+      <div class="cols">
+        <div><h3>Matches</h3><div id="matches" class="box">Loading…</div></div>
+        <div><h3>News</h3><div id="news" class="box">Loading…</div></div>
+      </div>
+      <div class="chart-box"><canvas id="goalsChart"></canvas></div>
+      </div>
+  </section>
+
+  <section id="about" class="page wrap">
+    <h2>About</h2>
+    <p>Football Tactics explains the game's key patterns in a simple way. Every tactic is drawn with dots and arrows and comes with a short caption.</p>
+    <p><b>Legend:</b> blue dots = your team, red dots = opponents, solid arrows = passes, dashed arrows = off-the-ball runs.</p>
+  </section>
+
+  <section id="contact" class="page wrap">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input required placeholder="Name">
+      <input required type="email" placeholder="Email">
+      <textarea required rows="5" placeholder="Your message"></textarea>
+      <button class="btn">Send</button>
+      <p id="formResult"></p>
+    </form>
+  </section>
+
+  <section id="faq" class="page wrap">
+    <h2>FAQ</h2>
+    <details><summary>Do the tactics work with any formation?</summary><p>They are basic patterns that adapt to any formation and age group.</p></details>
+    <details><summary>What do the dots and arrows mean?</summary><p>Blue dots: your team. Red: opponents. Solid arrow: pass. Dashed arrow: run without the ball.</p></details>
+    <details><summary>Can I use the diagrams with my team?</summary><p>Of course, they are made for training sessions and tactics boards.</p></details>
+      <details><summary>How do I zoom into a tactic?</summary><p>Click any diagram to open it in a larger view, then use the zoom buttons or the arrow keys to browse.</p></details>
+  </section>
+</main>
+
+<nav id="menu">
+  <a href="#home">Home</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#faq">FAQ</a>
+</nav>
+</body>
+</html>
